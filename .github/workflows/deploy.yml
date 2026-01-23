@@ -39,7 +39,7 @@ jobs:
             -   name: Deployment Overview
                 run: |
                     echo "Website deployment successful" 
-                    echo "https://${{secrets.CLOUDFRONT_DOMAIN}}"
+                    echo "https://${{secrets.CLOUDFRONT_URL}}"
 
 
 
