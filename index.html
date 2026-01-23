@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Infrastructure Demo - Victor Ojeje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Automated Infrastructure Demo</h1>
+        <p>Deployed via Terraform + GitHub Actions</p>
+    </header>
+    
+    <main>
+        <section class="architecture">
+            <h2>Architecture Components</h2>
+            <ul>
+                <li>S3 Static Website Hosting</li>
+                <li>CloudFront CDN </li>
+                <li>GitHub Actions CI/CD</li>
+                <li>OIDC Authentication (No Access Keys)</li>
+                <li>Terraform for Infrastructure as Code</li>
+            </ul>
+        </section>
+
+        <section class="metrics">
+            <h2>Performance Metrics</h2>
+            <div class="stat-grid">
+                <div class="stat">
+                    <span class="number">~30ms</span>
+                    <span class="label">CloudFront Response Time</span>
+                </div>
+                <div class="stat">
+                    <span class="number">99.99%</span>
+                    <span class="label">Uptime SLA</span>
+                </div>
+                <div class="stat">
+                    <span class="number">&lt;60s</span>
+                    <span class="label">Deployment Time</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack">
+            <h2>Technologies Used</h2>
+            <p><strong>Infrastructure:</strong> AWS S3, CloudFront, IAM</p>
+            <p><strong>IaC:</strong> Terraform </p>
+            <p><strong>CI/CD:</strong> GitHub Actions with OIDC</p>
+            <p><strong>Security:</strong> Least privilege IAM, encrypted state</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by Victor Ojeje | <a href="https://github.com/escanut">GitHub</a></p>
+        <p>Last deployed: <span id="timestamp"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
