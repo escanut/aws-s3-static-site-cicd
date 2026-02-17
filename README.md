@@ -1,9 +1,6 @@
 # Static Demo Site
 
 Simple static website demonstrating automated deployment via GitHub Actions to AWS S3 and CloudFront.
-
-**Live Site:** [https://d2jgqhup9totr6.cloudfront.net](https://d2jqghup9totr6.cloudfront.net)
-
 ---
 
 ## Overview
